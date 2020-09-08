@@ -1,0 +1,1 @@
+ARGS="--in_dir=/das/scans/input --out_dir=/das/scans/ocr"
