@@ -1,5 +1,3 @@
-![build and tests](https://github.com/seanrees/auto-tesseract/actions/workflows/build.yml/badge.svg)
-
 # auto-tesseract
 
 ## What
