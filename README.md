@@ -1,5 +1,3 @@
-![build and tests](https://github.com/seanrees/auto-tesseract/actions/workflows/build.yml/badge.svg)
-
 # auto-tesseract
 
 ## What
@@ -22,7 +20,7 @@ This program has two main arguments: --in_dir and --out_dir. Any PDF copied or m
 appear shortly in --out_dir. The original is untouched.
 
 ```sh
-% ./main.py --in_dir=input --out_dir=output
+% ./auto_tesseract.py --in_dir=input --out_dir=output
 ```
 
 This program will also backfill missing work. If there are files in the input directory that
@@ -31,19 +29,14 @@ upon startup.
 
 ## Build
 
-This program is built with [Bazel](http://bazel.build).
+This package is deployed with Docker, and the build is driven with the `Makefile`.
 
-To build the main package:
+To build (, test, and lint) the `auto-tesseract:dev` tag:
 ```sh
-% bazel build :main
+% make
 ```
 
-To build a Debian package:
+To build the "release" image, tagged as `auto-tesseract:latest`:
 ```sh
-% bazel build :main-deb
-```
-
-To run all the tests:
-```sh
-% bazel test ...
+% make release
 ```

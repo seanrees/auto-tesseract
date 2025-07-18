@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 """Creates a text-searchable PDF from a regular PDF.
 
 This is intended to be used with document scanners that output PDFs. A PDF

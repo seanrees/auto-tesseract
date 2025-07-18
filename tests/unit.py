@@ -1,4 +1,4 @@
-import main
+import auto_tesseract as main
 
 import shutil
 import os
